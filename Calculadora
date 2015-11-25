@@ -1,0 +1,30 @@
+# include <stdio.h>
+# include <stdlib.h>
+int main()
+{
+    char o;
+    float a,b;
+    printf("Digite o sinal de operacao que deseja (+,-,* ou */)\n");
+    scanf("%c",&o);
+    printf("Digite dois numeros: ");
+    scanf("%f%f",&a,&b);
+    switch(o) { 
+        
+        case '+':
+            printf("%.1f + %.1f = %.1f\n",a,b, a+b);
+            break;
+        case '-':
+            printf("%.1f - %.1f = %.1f\n",a, b, a-b);
+            break;
+        case '*':
+            printf("%.1f * %.1f = %.1f\n",a, b, a*b);
+            break;
+        case '/':
+            printf("%.1f / %.1f = %.1f\n",a, b, a/b);
+            break;
+        default:
+            printf ("operador invalida\n");
+    }
+    system("pause>>null");
+    return 0;
+}
